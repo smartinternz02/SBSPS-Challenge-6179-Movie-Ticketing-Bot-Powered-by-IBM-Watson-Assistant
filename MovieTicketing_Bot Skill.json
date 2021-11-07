@@ -1,0 +1,1312 @@
+{
+  "intents": [
+    {
+      "intent": "Book_ticket",
+      "examples": [
+        {
+          "text": "Book my tickets"
+        },
+        {
+          "text": "Could you please book my tickets?"
+        },
+        {
+          "text": "I want to book tickets"
+        }
+      ],
+      "description": ""
+    },
+    {
+      "intent": "greeting",
+      "examples": [
+        {
+          "text": "good afternoon"
+        },
+        {
+          "text": "good evening"
+        },
+        {
+          "text": "good morning"
+        },
+        {
+          "text": "good night"
+        },
+        {
+          "text": "hello"
+        },
+        {
+          "text": "hey"
+        },
+        {
+          "text": "hi"
+        },
+        {
+          "text": "hola"
+        }
+      ],
+      "description": ""
+    },
+    {
+      "intent": "Movies",
+      "examples": [
+        {
+          "text": "Could you please tell me the newly released movies?"
+        },
+        {
+          "text": "I want to check out the newly released movies?"
+        },
+        {
+          "text": "List out the movies"
+        },
+        {
+          "text": "What are the movies today?"
+        },
+        {
+          "text": "What are the newly released movies?"
+        }
+      ],
+      "description": ""
+    },
+    {
+      "intent": "Movie_Selection",
+      "examples": [
+        {
+          "text": "Bhairava"
+        },
+        {
+          "text": "Gilli"
+        },
+        {
+          "text": "Nanban"
+        },
+        {
+          "text": "Tamizhan"
+        },
+        {
+          "text": "Theri"
+        },
+        {
+          "text": "Thuppakki"
+        }
+      ],
+      "description": ""
+    },
+    {
+      "intent": "Shows",
+      "examples": [
+        {
+          "text": "Evening Show"
+        },
+        {
+          "text": "Matinee Show"
+        },
+        {
+          "text": "Morning Show"
+        },
+        {
+          "text": "Night Show"
+        }
+      ],
+      "description": ""
+    },
+    {
+      "intent": "Timing",
+      "examples": [
+        {
+          "text": "What is the timing of the movie?"
+        },
+        {
+          "text": "What is the timing of the show?"
+        }
+      ],
+      "description": ""
+    }
+  ],
+  "entities": [
+    {
+      "entity": "Book_ticket",
+      "values": [
+        {
+          "type": "synonyms",
+          "value": "Book my tickets",
+          "synonyms": [
+            "book",
+            "tickets"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "Could you please book my tickets?",
+          "synonyms": [
+            "I want to book tickets"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "Order tickets",
+          "synonyms": [
+            "order"
+          ]
+        }
+      ],
+      "fuzzy_match": true
+    },
+    {
+      "entity": "greeting",
+      "values": [
+        {
+          "type": "synonyms",
+          "value": "good afternoon",
+          "synonyms": [
+            "afternoon",
+            "gd aftrnoon",
+            "gd aftrnun",
+            "gd nun",
+            "gud afternoon",
+            "gud aftrnoon",
+            "gud aftrnun",
+            "noon"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "good evening",
+          "synonyms": [
+            "evening",
+            "evng",
+            "gd evng",
+            "ge",
+            "gud evng"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "good morning",
+          "synonyms": [
+            "gd mrng",
+            "gm",
+            "god mrng",
+            "gud mrng",
+            "mrng"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "Good night",
+          "synonyms": [
+            "gd ni8",
+            "gd night",
+            "gn",
+            "gud ni8",
+            "gud nit",
+            "ni8",
+            "night",
+            "nit"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "Hello",
+          "synonyms": [
+            "galo",
+            "halo",
+            "hlo",
+            "hloo"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "hey",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "Hi",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "Hola",
+          "synonyms": []
+        }
+      ],
+      "fuzzy_match": true
+    },
+    {
+      "entity": "Movies",
+      "values": [
+        {
+          "type": "synonyms",
+          "value": "film",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "I want to check out the newly released movies?",
+          "synonyms": [
+            "check film",
+            "check films",
+            "check movie",
+            "check movies",
+            "check new films",
+            "check new movie",
+            "check out",
+            "check out movie",
+            "check out newly released movies"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "List out the movies",
+          "synonyms": [
+            "list film",
+            "list films",
+            "list movie",
+            "list movies",
+            "list out films",
+            "list out movies"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "movie",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "new film",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "new movie",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "new released movies",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "new releases",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "What are the movies today?",
+          "synonyms": [
+            "films today",
+            "movies today",
+            "today films",
+            "today movies"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "What are the newly released movies?",
+          "synonyms": [
+            "newly released movies"
+          ]
+        }
+      ],
+      "fuzzy_match": true
+    },
+    {
+      "entity": "Movie_selection",
+      "values": [
+        {
+          "type": "synonyms",
+          "value": "Bhairava",
+          "synonyms": [
+            "bairava",
+            "bhairava cinema",
+            "bhairava film",
+            "Bhairava Movie"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "Gilli",
+          "synonyms": [
+            "gilli cinema",
+            "gilli film",
+            "Gilli movie"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "Nanban",
+          "synonyms": [
+            "nanban cinema",
+            "nanban film",
+            "nanban movie"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "Tamizhan",
+          "synonyms": [
+            "tamilan",
+            "tamizhan cinema",
+            "tamizhan film",
+            "tamizhan movie"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "Theri",
+          "synonyms": [
+            "theri cinema",
+            "theri film",
+            "theri movie"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "Thuppakki",
+          "synonyms": [
+            "aki",
+            "thupaki",
+            "thupakki",
+            "thuppaki",
+            "thuppakki cinema",
+            "thuppakki film",
+            "thuppakki movie"
+          ]
+        }
+      ],
+      "fuzzy_match": true
+    },
+    {
+      "entity": "Shows",
+      "values": [
+        {
+          "type": "synonyms",
+          "value": "Evening Show",
+          "synonyms": [
+            "Evening",
+            "Evng"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "Matinee Show",
+          "synonyms": [
+            "Afternoon",
+            "Matinee",
+            "Noon"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "Morning Show",
+          "synonyms": [
+            "Morning",
+            "Mrng"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "Night Show",
+          "synonyms": [
+            "ni8",
+            "Night",
+            "nit"
+          ]
+        }
+      ],
+      "fuzzy_match": true
+    },
+    {
+      "entity": "sys-number",
+      "values": [],
+      "fuzzy_match": true
+    },
+    {
+      "entity": "Thankyou",
+      "values": [
+        {
+          "type": "synonyms",
+          "value": "Thank you",
+          "synonyms": [
+            "thank u",
+            "thanku",
+            "thankyou",
+            "tnk u",
+            "tnku",
+            "tnq"
+          ]
+        }
+      ],
+      "fuzzy_match": true
+    }
+  ],
+  "metadata": {
+    "api_version": {
+      "major_version": "v2",
+      "minor_version": "2018-11-08"
+    }
+  },
+  "dialog_nodes": [
+    {
+      "type": "standard",
+      "title": "Anything else",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "I didn't understand. You can try rephrasing."
+              },
+              {
+                "text": "Can you reword your statement? I'm not understanding."
+              },
+              {
+                "text": "I didn't get your meaning."
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "conditions": "anything_else",
+      "dialog_node": "Anything else",
+      "previous_sibling": "node_2_1635738384816",
+      "disambiguation_opt_out": true
+    },
+    {
+      "type": "event_handler",
+      "output": {},
+      "parent": "slot_6_1635314717816",
+      "event_name": "focus",
+      "dialog_node": "handler_2_1635314717884",
+      "previous_sibling": "handler_8_1635314717884"
+    },
+    {
+      "type": "event_handler",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Enter the movie name to book tickets"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "slot_6_1635727731521",
+      "event_name": "focus",
+      "dialog_node": "handler_2_1635727731590",
+      "previous_sibling": "handler_7_1635727731590"
+    },
+    {
+      "type": "event_handler",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Enter the number of tickets you want to book"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "slot_10_1635727817892",
+      "event_name": "focus",
+      "dialog_node": "handler_5_1635727817892",
+      "previous_sibling": "handler_8_1635727817892"
+    },
+    {
+      "type": "event_handler",
+      "output": {},
+      "parent": "slot_6_1635727731521",
+      "context": {
+        "contextmovie": "@Movie_selection"
+      },
+      "conditions": "@Movie_selection",
+      "event_name": "input",
+      "dialog_node": "handler_7_1635727731590"
+    },
+    {
+      "type": "event_handler",
+      "output": {},
+      "parent": "slot_6_1635728765811",
+      "context": {
+        "contextshows": "@Shows"
+      },
+      "conditions": "@Shows",
+      "event_name": "input",
+      "dialog_node": "handler_7_1635728765811"
+    },
+    {
+      "type": "event_handler",
+      "parent": "slot_6_1635314717816",
+      "event_name": "input",
+      "dialog_node": "handler_8_1635314717884"
+    },
+    {
+      "type": "event_handler",
+      "output": {},
+      "parent": "slot_10_1635727817892",
+      "context": {
+        "contextsys": "@sys-number"
+      },
+      "conditions": "@sys-number",
+      "event_name": "input",
+      "dialog_node": "handler_8_1635727817892"
+    },
+    {
+      "type": "event_handler",
+      "output": {
+        "generic": [
+          {
+            "title": "Select your show",
+            "options": [
+              {
+                "label": "Morning Show",
+                "value": {
+                  "input": {
+                    "text": "Morning Show"
+                  }
+                }
+              },
+              {
+                "label": "Matinee Show",
+                "value": {
+                  "input": {
+                    "text": "Matinee Show"
+                  }
+                }
+              },
+              {
+                "label": "Evening Show",
+                "value": {
+                  "input": {
+                    "text": "Evening Show"
+                  }
+                }
+              },
+              {
+                "label": "Night Show",
+                "value": {
+                  "input": {
+                    "text": "Night Show"
+                  }
+                }
+              }
+            ],
+            "response_type": "option"
+          }
+        ]
+      },
+      "parent": "slot_6_1635728765811",
+      "event_name": "focus",
+      "dialog_node": "handler_9_1635728765811",
+      "previous_sibling": "handler_7_1635728765811"
+    },
+    {
+      "type": "standard",
+      "title": "Deleting context variables",
+      "output": {
+        "deleted": "<?context.remove('contextmovie')?><?context.remove('contextsys')?><?context.remove('contextshows')?>",
+        "generic": [
+          {
+            "values": [],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_6_1635727674359",
+      "conditions": "true",
+      "dialog_node": "node_10_1635738765025"
+    },
+    {
+      "type": "standard",
+      "title": "Movies",
+      "output": {
+        "generic": [
+          {
+            "title": "List of movies",
+            "source": "https://www.gethucinema.com/wp-content/uploads/2017/03/BeFunky-Collage-1.jpg",
+            "response_type": "image"
+          },
+          {
+            "title": "Select any movie to know more about it",
+            "options": [
+              {
+                "label": "Bhairava",
+                "value": {
+                  "input": {
+                    "text": "Bhairava"
+                  }
+                }
+              },
+              {
+                "label": "Gilli",
+                "value": {
+                  "input": {
+                    "text": "Gilli"
+                  }
+                }
+              },
+              {
+                "label": "Theri",
+                "value": {
+                  "input": {
+                    "text": "Theri"
+                  }
+                }
+              },
+              {
+                "label": "Thuppakki",
+                "value": {
+                  "input": {
+                    "text": "Thuppakki"
+                  }
+                }
+              },
+              {
+                "label": "Nanban",
+                "value": {
+                  "input": {
+                    "text": "Nanban"
+                  }
+                }
+              },
+              {
+                "label": "Tamizhan",
+                "value": {
+                  "input": {
+                    "text": "Tamizhan"
+                  }
+                }
+              }
+            ],
+            "response_type": "option"
+          }
+        ]
+      },
+      "metadata": {
+        "_customization": {
+          "mcr": false
+        }
+      },
+      "conditions": "#Movies || @Movies",
+      "digress_in": "does_not_return",
+      "dialog_node": "node_2_1634555675882",
+      "previous_sibling": "node_6_1635727674359"
+    },
+    {
+      "type": "standard",
+      "title": "Thank You",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "You're Welcome"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "conditions": "@Thankyou",
+      "digress_in": "does_not_return",
+      "dialog_node": "node_2_1635738384816",
+      "previous_sibling": "node_3_1634558252333"
+    },
+    {
+      "type": "standard",
+      "title": "Movie Selection",
+      "metadata": {
+        "_customization": {
+          "mcr": true
+        }
+      },
+      "conditions": "@Movie_selection",
+      "digress_in": "does_not_return",
+      "dialog_node": "node_3_1634558252333",
+      "previous_sibling": "node_2_1634555675882"
+    },
+    {
+      "type": "standard",
+      "title": "Greeting",
+      "metadata": {
+        "_customization": {
+          "mcr": true
+        }
+      },
+      "conditions": "#greeting || @greeting",
+      "digress_in": "does_not_return",
+      "dialog_node": "node_5_1634480581792",
+      "previous_sibling": "Welcome"
+    },
+    {
+      "type": "frame",
+      "title": "Book tickets",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Your ticket for $contextmovie movie has been booked successfully"
+              },
+              {
+                "text": "Number of tickets : $contextsys"
+              },
+              {
+                "text": "Show : $contextshows"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "multiline"
+          }
+        ]
+      },
+      "next_step": {
+        "behavior": "skip_user_input"
+      },
+      "conditions": "#Book_ticket || @Book_ticket",
+      "dialog_node": "node_6_1635727674359",
+      "previous_sibling": "node_5_1634480581792"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Movie Name: Bhairava"
+              },
+              {
+                "text": "Hall :           Hall 1 Screen 1"
+              },
+              {
+                "text": "Morning Show:  10:40 AM "
+              },
+              {
+                "text": "Matinee Show:  02:10 PM"
+              },
+              {
+                "text": "Evening Show:  06:25 PM"
+              },
+              {
+                "text": "Night Show:       10:00 PM"
+              },
+              {
+                "text": "Ticket Cost : Rs.250"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "multiline"
+          }
+        ]
+      },
+      "parent": "node_3_1634558252333",
+      "conditions": "@Movie_selection:Bhairava",
+      "dialog_node": "response_10_1634558348767",
+      "previous_sibling": "slot_6_1635314717816"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Movie Name: Theri"
+              },
+              {
+                "text": "Hall :           Hall 2 Screen 1"
+              },
+              {
+                "text": "Morning Show:  10:40 AM "
+              },
+              {
+                "text": "Matinee Show:  02:10 PM"
+              },
+              {
+                "text": "Evening Show:  06:25 PM"
+              },
+              {
+                "text": "Night Show:       10:00 PM"
+              },
+              {
+                "text": "Ticket Cost : Rs.250"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "multiline"
+          }
+        ]
+      },
+      "parent": "node_3_1634558252333",
+      "conditions": "@Movie_selection:Theri",
+      "dialog_node": "response_10_1634558596945",
+      "previous_sibling": "response_6_1634558584048"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Movie Name: Nanban"
+              },
+              {
+                "text": "Hall :           Hall 3 Screen 1"
+              },
+              {
+                "text": "Morning Show:  10:40 AM "
+              },
+              {
+                "text": "Matinee Show:  02:10 PM"
+              },
+              {
+                "text": "Evening Show:  06:25 PM"
+              },
+              {
+                "text": "Night Show:       10:00 PM"
+              },
+              {
+                "text": "Ticket Cost : Rs.250"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "multiline"
+          }
+        ]
+      },
+      "parent": "node_3_1634558252333",
+      "conditions": "@Movie_selection:Nanban",
+      "dialog_node": "response_2_1634558615379",
+      "previous_sibling": "response_5_1634558607625"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Good Evening. Hope you are doing great! How may I assist you? "
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_5_1634480581792",
+      "conditions": "@greeting:(good evening)",
+      "dialog_node": "response_3_1634482381321",
+      "previous_sibling": "response_6_1634482290417"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Hi there! Hope you are doing great! How may I assist you? "
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_5_1634480581792",
+      "conditions": "@greeting:Hi",
+      "dialog_node": "response_4_1634482405211",
+      "previous_sibling": "response_3_1634482381321"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Movie Name: Tamizhan"
+              },
+              {
+                "text": "Hall :           Hall 3 Screen 2"
+              },
+              {
+                "text": "Morning Show:  10:45 AM "
+              },
+              {
+                "text": "Matinee Show:  02:15 PM"
+              },
+              {
+                "text": "Evening Show:  06:30 PM"
+              },
+              {
+                "text": "Night Show:       10:05 PM"
+              },
+              {
+                "text": "Ticket Cost : Rs.250"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "multiline"
+          }
+        ]
+      },
+      "parent": "node_3_1634558252333",
+      "conditions": "@Movie_selection:Tamizhan",
+      "dialog_node": "response_4_1634558621783",
+      "previous_sibling": "response_2_1634558615379"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Hola! Hope you are doing great! How may I assist you? "
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_5_1634480581792",
+      "conditions": "@greeting:Hola",
+      "dialog_node": "response_5_1634482459886",
+      "previous_sibling": "response_4_1634482405211"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Movie Name: Thuppakki"
+              },
+              {
+                "text": "Hall :           Hall 2 Screen 2"
+              },
+              {
+                "text": "Morning Show:  10:45 AM "
+              },
+              {
+                "text": "Matinee Show:  02:15 PM"
+              },
+              {
+                "text": "Evening Show:  06:30 PM"
+              },
+              {
+                "text": "Night Show:       10:05 PM"
+              },
+              {
+                "text": "Ticket Cost : Rs.250"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "multiline"
+          }
+        ]
+      },
+      "parent": "node_3_1634558252333",
+      "conditions": "@Movie_selection:Thuppakki",
+      "dialog_node": "response_5_1634558607625",
+      "previous_sibling": "response_10_1634558596945"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Good Morning. Hope you are doing great! How may I assist you? "
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_5_1634480581792",
+      "conditions": "@greeting:(good morning)",
+      "dialog_node": "response_6_1634482267881"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Good Afternoon. Hope you are doing great! How may I assist you? "
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_5_1634480581792",
+      "conditions": "@greeting:(good afternoon)",
+      "dialog_node": "response_6_1634482290417",
+      "previous_sibling": "response_6_1634482267881"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Hello! Hope you are doing great! How may I assist you? "
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_5_1634480581792",
+      "conditions": "@greeting:Hello",
+      "dialog_node": "response_6_1634482477326",
+      "previous_sibling": "response_5_1634482459886"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Movie Name: Gilli"
+              },
+              {
+                "text": "Hall :           Hall 1 Screen 2"
+              },
+              {
+                "text": "Morning Show:  10:45 AM "
+              },
+              {
+                "text": "Matinee Show:  02:15 PM"
+              },
+              {
+                "text": "Evening Show:  06:30 PM"
+              },
+              {
+                "text": "Night Show:       10:05 PM"
+              },
+              {
+                "text": "Ticket Cost : Rs.250"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "multiline"
+          }
+        ]
+      },
+      "parent": "node_3_1634558252333",
+      "conditions": "@Movie_selection:Gilli",
+      "dialog_node": "response_6_1634558584048",
+      "previous_sibling": "response_10_1634558348767"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Hey there! Hope you are doing great! How may I assist you? "
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_5_1634480581792",
+      "conditions": "@greeting:hey",
+      "dialog_node": "response_7_1634482502200",
+      "previous_sibling": "response_6_1634482477326"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Good Night ! Sweet dreams"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_5_1634480581792",
+      "conditions": "@greeting:(Good night)",
+      "dialog_node": "response_9_1634482694032",
+      "previous_sibling": "response_7_1634482502200"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "title": "List of movies",
+            "source": "https://www.gethucinema.com/wp-content/uploads/2017/03/BeFunky-Collage-1.jpg",
+            "response_type": "image"
+          },
+          {
+            "title": "Select any movie to know more about it",
+            "options": [
+              {
+                "label": "Bhairava",
+                "value": {
+                  "input": {
+                    "text": "Bhairava"
+                  }
+                }
+              },
+              {
+                "label": "Gilli",
+                "value": {
+                  "input": {
+                    "text": "Gilli"
+                  }
+                }
+              },
+              {
+                "label": "Theri",
+                "value": {
+                  "input": {
+                    "text": "Theri"
+                  }
+                }
+              },
+              {
+                "label": "Thuppakki",
+                "value": {
+                  "input": {
+                    "text": "Thuppakki"
+                  }
+                }
+              },
+              {
+                "label": "Nanban",
+                "value": {
+                  "input": {
+                    "text": "Nanban"
+                  }
+                }
+              },
+              {
+                "label": "Tamizhan",
+                "value": {
+                  "input": {
+                    "text": "Tamizhan"
+                  }
+                }
+              }
+            ],
+            "response_type": "option"
+          }
+        ]
+      },
+      "parent": "node_2_1634555675882",
+      "disabled": true,
+      "conditions": "@Movies:(Thupaki movie)",
+      "dialog_node": "response_9_1634579743285"
+    },
+    {
+      "type": "slot",
+      "parent": "node_6_1635727674359",
+      "variable": "$contextsys",
+      "dialog_node": "slot_10_1635727817892",
+      "previous_sibling": "slot_6_1635727731521"
+    },
+    {
+      "type": "slot",
+      "parent": "node_3_1634558252333",
+      "dialog_node": "slot_6_1635314717816"
+    },
+    {
+      "type": "slot",
+      "parent": "node_6_1635727674359",
+      "variable": "$contextmovie",
+      "dialog_node": "slot_6_1635727731521",
+      "previous_sibling": "node_10_1635738765025"
+    },
+    {
+      "type": "slot",
+      "output": {},
+      "parent": "node_6_1635727674359",
+      "variable": "$contextshows",
+      "dialog_node": "slot_6_1635728765811",
+      "previous_sibling": "slot_10_1635727817892"
+    },
+    {
+      "type": "standard",
+      "title": "Welcome",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Hello. I am a Movie Ticketing Bot. How may I assist you?"
+              },
+              {
+                "text": "Hi. I am a Movie Ticketing Bot. How can I help you?"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "random"
+          }
+        ]
+      },
+      "conditions": "welcome",
+      "dialog_node": "Welcome"
+    }
+  ],
+  "counterexamples": [],
+  "system_settings": {
+    "disambiguation": {
+      "prompt": "Did you mean:",
+      "enabled": true,
+      "randomize": true,
+      "max_suggestions": 5,
+      "suggestion_text_policy": "title",
+      "none_of_the_above_prompt": "None of the above"
+    },
+    "human_agent_assist": {
+      "prompt": "Did you mean:"
+    },
+    "intent_classification": {
+      "training_backend_version": "v2"
+    },
+    "spelling_auto_correct": true
+  },
+  "learning_opt_out": false,
+  "name": "MovieTicketing_Bot",
+  "language": "en",
+  "description": ""
+}
